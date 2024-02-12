@@ -41,7 +41,7 @@
 .card {
     background-color: white;
 
-    width: 370px;
+    max-width: 370px;
     padding: 16px 16px;
     border-radius: 8px;
 }
