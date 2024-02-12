@@ -1,12 +1,77 @@
-.flex {
-    display: flex;
+@import url('loading.css');
+@import url('utils.css');
+@import url('input.css');
+@import url('button.css');
+@import url('checkbox.css');
+@import url('text.css');
+
+/* Remove all style - Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --primary: #2E1462;
+    --secundary: #45FEFE;
+    --secundary-dark: #52eeee;
+
+    --secundary-text: #666666;
+
+    --input-background: #F6F6F6;
+    --input-border-color: #E8E8E8;
+    --input-border-size: 1px;
+
+    --white: #fff;
+    --black: #000;    
 }
 
-.flex-row {
-    flex-direction: row;
+/* Body */
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+/* Card */
+
+.card {
+    background-color: white;
+
+    width: 370px;
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secundary-text);
+
+    text-align: center;
+    margin: 10px 20px;
+}
+
+
+/* Square */
+
+.square {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    background-color: var(--input-background);
+    border-radius: 8px;
 }
